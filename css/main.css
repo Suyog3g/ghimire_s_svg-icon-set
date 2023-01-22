@@ -1,127 +1,132 @@
-/* 
-
- CSS guide
- 1. General Styles
- 2. Grid
- 3. Header
- 4. Main Body
- 5. Footer
-
-*/
-
-
-/* 1. -- General Styles -- */
-
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.hidden {
-    display: none;
-}
-
-
-/* 2. -- Grid -- */
-
-.grid {
-    display: grid;
-    padding-left: 15px;
-    padding-right: 15px;
-    grid-template-columns: repeat(12, 70px);
-    grid-column-gap: 30px;
-}
-
-
-/* 3. -- Header -- */
-
-#main-header {
-    margin-top: 20px;
-    background-color: rgb(163, 124, 124);
-    width: 1200px;
-}
-
-.header-logo {
-    height: 100px;
-    width: 270px;
-    grid-column: 1/4;
-    font-size: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-}
-
-.header-nav, img {
-    width: 50px;
-    height: 50px;
-    grid-column: 11/-1;
-}
-
-
-/* 3. -- Body -- */
-
-.title {
-    font-size: 60px;
-    text-align: center;
-    grid-column: 4/-4;
-}
-
-
-main {
-    font-size: 16px;
-    background-color: white;
     width: 100%;
     height: 100vh;
-   
-    color: black;
-
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    isolation: isolate;
-    grid-column: 1/-1;
-}
-
-
-main::after {
-    content: '';
-    position: absolute;
-    background: pink;
-    inset: 0;
-    z-index: -1;
-    opacity: .2;
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../images/background.jpg);
+    background-position: center;
     background-size: cover;
-
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.icons {
-    float: right;
-    position: relative;
+.navbar {
+    height: 15%;
+    display: flex;
+    align-items: center;
 }
 
-#wrapper .icons {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-   
-    background-color: rgb(229, 229, 144);  
-    border-radius: 100%;
+.logo {
+    width: 80px;
     cursor: pointer;
-    padding: 40px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
-    transition: all 0.3s ease-out;
-    overflow: hidden;
-    
 }
 
-#wrapper .icons .main-icons {
-    position: absolute;
-   grid-column: 3/-3;
-   grid-row: 2/3;
+nav {
+    flex: 1;
+    text-align: right;
 }
 
-#wrapper .icons:hover {
-
-   background-color: rgb(231, 231, 61); 
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.row {
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+p{
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+button {
+    width: 200px;
+    color: #000;
+    font-size: 25px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 60px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    fill: white;
+    margin-right: 120px;
+    margin-bottom: 60px;
+}
+
+#facebook:hover #blue {
+    fill: red;
+}
+
+#twitter:hover #blue {
+    fill: red;
+}
+
+#linkden:hover #blue {
+    fill: red;
+}
+
+#pintrest:hover #red {
+    fill: blue;
+}
+
+#skype:hover #blue {
+    fill: red;
+}
+
+
+#amazon:hover #yellow {
+    fill: blue;
+}
+
+
+
+/* .card {
+    width: 500px;
+    height: 110px;
+    display: flex;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin: 50px 80px;
+}  */
+/* 
+#main-burger #burger{
+    fill: white;
+}
+
+#main-burger:hover{
+    fill: blue;
+} */
