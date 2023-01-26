@@ -113,20 +113,15 @@ button {
 }
 
 
-
-/* .card {
-    width: 500px;
-    height: 110px;
-    display: flex;
-    padding: 15px 50px;
-    cursor: pointer;
-    margin: 50px 80px;
-}  */
-/* 
-#main-burger #burger{
-    fill: white;
+#soundcloud:hover #orange {
+    fill: blue;
 }
 
-#main-burger:hover{
-    fill: blue;
-} */
+#youtube:hover #red {
+    fill: black;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
