@@ -14,9 +14,11 @@ querySelector is the method (function) that makes the connection between JS and 
 const facebook = document.querySelector('#facebook');
 const twitter = document.querySelector('#twitter');
 const linkden = document.querySelector('#linkden');
-const pintrest= document.querySelector('#pinterest');
+const pintrest = document.querySelector('#pintrest');
 const skype = document.querySelector('#skype');
 const amazon = document.querySelector('#amazon');
+const android = document.querySelector('#android');
+const applelogo = document.querySelector('#applelogo');
 const soundcloud = document.querySelector('#soundcloud');
 const youtube = document.querySelector('#youtube');
 
@@ -32,5 +34,7 @@ linkden.addEventListener('click', logThisId);
 pintrest.addEventListener('click', logThisId);
 skype.addEventListener('click', logThisId);
 amazon.addEventListener('click', logThisId);
+android.addEventListener('click', logThisId);
+applelogo.addEventListener('click', logThisId);
 soundcloud.addEventListener('click', logThisId);
 youtube.addEventListener('click', logThisId);
