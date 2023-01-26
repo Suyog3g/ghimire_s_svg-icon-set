@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserat', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -42,8 +42,13 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-
 }
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: yellow;
+    font-size: 21px;
+} 
 
 .row {
     display: flex;
@@ -52,18 +57,21 @@ nav ul li a {
 }
 
 .col {
-    flex-basis: 50%;
+    display: inline-block;
+    margin: 400px 30px 30px 200px;
 }
 
 h1 {
     color: #fff;
     font-size: 100px;
+    padding-bottom: 50px;
 }
 
 p{
     font-size: 50px;
     line-height: 50px;
     color: #fff;
+    padding-bottom: 40px;
 }
 
 button {
@@ -95,7 +103,7 @@ button {
     fill: red;
 }
 
-#linkden:hover #blue {
+#linkden:hover #blue-linkden {
     fill: red;
 }
 
@@ -112,16 +120,38 @@ button {
     fill: blue;
 }
 
+#android:hover #orange {
+    fill: yellow;
+}
+
+#android #orange{
+    fill: orange;
+}
+
+#applelogo #Grey {
+    fill: grey;
+}
+
+
+#applelogo:hover #Grey {
+    fill: black;
+}
+
+#soundcloud #orange {
+    fill: orange;
+}
+
 
 #soundcloud:hover #orange {
-    fill: blue;
+    fill: grey;
 }
 
 #youtube:hover #red {
-    fill: black;
+    fill: blue;
 }
 
 button:hover {
     background-color: black;
     color: white;
 }
+
